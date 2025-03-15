@@ -57,9 +57,9 @@ function TransactionModal({ isOpen, onClose, transaction }: TransactionModalProp
 
     try {
       if (transaction) {
-        await axios.put(`http://localhost:3000/api/transactions/${transaction._id}`, data);
+        await axios.put(`https://backend-yardstick.onrender.com/api/transactions/${transaction._id}`, data);
       } else {
-        await axios.post('http://localhost:3000/api/transactions', data);
+        await axios.post('https://backend-yardstick.onrender.com/api/transactions', data);
       }
       onClose();
     } catch (error) {

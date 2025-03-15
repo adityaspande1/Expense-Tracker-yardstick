@@ -42,8 +42,8 @@ function Dashboard() {
     const fetchData = async () => {
       try {
         const [transactionsRes, budgetsRes] = await Promise.all([
-          axios.get<Transaction[]>('http://localhost:3000/api/transactions'),
-          axios.get<Budget[]>('http://localhost:3000/api/budgets')
+          axios.get<Transaction[]>('https://backend-yardstick.onrender.com/api/transactions'),
+          axios.get<Budget[]>('https://backend-yardstick.onrender.com/api/budgets')
         ]);
 
         setTransactions(transactionsRes.data);

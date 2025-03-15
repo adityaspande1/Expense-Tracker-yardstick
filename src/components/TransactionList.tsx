@@ -24,7 +24,7 @@ function TransactionList() {
 
   const fetchTransactions = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/transactions');
+      const response = await axios.get('https://backend-yardstick.onrender.com/api/transactions');
       setTransactions(response.data);
     } catch (error) {
       console.error('Failed to fetch transactions:', error);
@@ -33,7 +33,7 @@ function TransactionList() {
 
   const handleDelete = async (id: string) => {
     try {
-      await axios.delete(`http://localhost:3000/api/transactions/${id}`);
+      await axios.delete(`https://backend-yardstick.onrender.com/api/transactions/${id}`);
       fetchTransactions();
     } catch (error) {
       console.error('Failed to delete transaction:', error);

@@ -47,8 +47,8 @@ function BudgetManager() {
 
   const fetchData = async () => {
     const [budgetsRes, transactionsRes] = await Promise.all([
-      axios.get('http://localhost:3000/api/budgets'),
-      axios.get('http://localhost:3000/api/transactions')
+      axios.get('https://backend-yardstick.onrender.com/api/budgets'),
+      axios.get('https://backend-yardstick.onrender.com/api/transactions')
     ]);
 
     setBudgets(budgetsRes.data);
@@ -59,7 +59,7 @@ function BudgetManager() {
     e.preventDefault();
     
     try {
-      await axios.post('http://localhost:3000/api/budgets', {
+      await axios.post('https://backend-yardstick.onrender.com/api/budgets', {
         ...newBudget,
         amount: parseFloat(newBudget.amount),
         month: new Date(newBudget.month)
