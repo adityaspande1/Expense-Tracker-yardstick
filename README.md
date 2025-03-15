@@ -1,6 +1,6 @@
 # Expense-Tracker-yardstick
 
-Backend Repository:![Link] (https://github.com/adityaspande1/backend-yardstick)
+Backend Repository: https://github.com/adityaspande1/backend-yardstick
 Images for example 
 ![image](https://github.com/user-attachments/assets/ef4bd8cd-a104-4531-9914-24e9953e2107)
 ![image](https://github.com/user-attachments/assets/12aaadde-b600-4757-8eda-53b66c1067e0)
