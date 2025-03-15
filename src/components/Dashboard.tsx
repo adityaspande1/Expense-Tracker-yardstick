@@ -39,6 +39,7 @@ function Dashboard() {
   const [categoryData, setCategoryData] = useState<CategoryData[]>([]);
 
   useEffect(() => {
+    console.log(budgets);
     const fetchData = async () => {
       try {
         const [transactionsRes, budgetsRes] = await Promise.all([
